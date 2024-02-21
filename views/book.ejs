@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+  <link rel="stylesheet" href="bookpagestyle.css">
+</head>
+<body>
+  <div class="container">
+  <header> 
+    <h2>BOOK-IT</h2>
+    <ul>
+      <li><a href="/home">home</a></li>
+      <li><a href="/book">books</a></li>
+      <li><a href="/add-book">add-book</a></li>
+      <li><a href="/login">login</a></li>
+    </ul>
+  </header>
+  <div class="table-container">
+  
+  <table>
+    <thead>
+      <tr>
+        <th class="title" >Title</th>
+        <th class="author">Author</th>
+        <th class= "price">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% books.forEach(book => { %>
+        <tr>
+          <td class="title"><%= book.title %></td>
+          <td class="author"><%= book.author %></td>
+          <td class= "price"><%= book.price %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book-IT</title>
+  <link rel="stylesheet" href="addbookstyle.css">
+</head>
+<body>
+  <div class="container">
+  <header> 
+    <h2>BOOK-IT</h2>
+    <ul>
+      <li><a href="/home">home</a></li>
+      <li><a href="/book">books</a></li>
+      <li><a href="/add-book">add-book</a></li>
+      <li><a href="/login">login</a></li>
+    </ul>
+  </header>
+  <div class="form-container">
+  <form action="/add-book" method="post">
+    <label for="book">title</label>
+    <input type="text" name="title" required>
+    <label for="author" >author</label>
+    <input type="text" name="author" required>
+    <label for="price">price</label>
+    <input type="text" name="price" required>
+    <input type="submit" value="add book">
+  </form>
+  </div>
+</div>
+</body>
+</html>

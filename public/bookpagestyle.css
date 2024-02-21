@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  background-image: url('wooden-plank-close-up.jpg');
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 100px;
+  color: white;
+  transition: 0.6s;
+  padding: 20px 50px;
+  z-index: 100000;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+header h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  transition: 0.6s;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.table-container {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-container table th, .table-container table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.table-container table th.title, .table-container table td.title {
+  width: 50%; 
+}
+
+.table-container table th.author, .table-container table td.author {
+  width: 25%; 
+}
+
+.table-container table th.price, .table-container table td.price {
+  width: 25%; 
+}
+
+
+table, th, td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+  color: black;
+}
